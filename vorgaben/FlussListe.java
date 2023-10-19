@@ -49,10 +49,11 @@ public class FlussListe {
     // 3P
     public FlussListe filterNachMuendung(String muendung) {
         FlussListe fListe = new FlussListe();
-        for (String[] fluss : FlussDaten.flussDaten) {
-            if (fluss[4].equals(muendung)) {
-                Fluss temp = new Fluss(FlussDaten.toInt(fluss[0]), fluss[1], fluss[2], fluss[3], fluss[4]);
-                fListe.insert(temp);
+        FlussListenelement fl = this.head;
+        while (fl.next != this.z){
+            fl = fl.next;
+            if (fl.data.muendung.equals(muendung)){
+                fListe.insert(fl.data);
             }
         }
         
@@ -66,12 +67,13 @@ public class FlussListe {
     // 2P
     public StringListe getMuendungen() {
         StringListe mListe = new StringListe();
-        FlussListenelement temp = this.head.next;
-        while (temp.next != this.z) {
+        FlussListenelement temp = this.head;
+        while (temp.next != z) {
+            temp = temp.next;
             System.out.println(temp.data.toString());
 
             mListe.insertNoDuplicates(temp.data.muendung);
-            temp = temp.next;
+            
         }
 
         return mListe;

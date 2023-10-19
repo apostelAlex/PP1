@@ -46,6 +46,7 @@ public class StringListe {
             if (s.equals(temp.data)){
                 return true;
             }
+            temp = temp.next;
         }
         return false;  
     }
@@ -58,7 +59,7 @@ public class StringListe {
     public void insertNoDuplicates(String str){
         StringListenelement temp = head;
         while (temp.next != this.z){
-            if (temp.data.equals(str)){
+            if (temp.next.data.equals(str)){
                 return;
             }
             temp = temp.next;

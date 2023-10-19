@@ -6,9 +6,7 @@ public class TestListen {
         for (Fluss f : flussFeld) {
             fListe.insert(f);
         }
-
- 
-
+        
         /* *** Aufgabe 3e *** */
         // 1P
         // Liste mit Muendungen initialisieren und ausgeben
