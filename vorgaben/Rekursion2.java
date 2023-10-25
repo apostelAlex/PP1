@@ -1,3 +1,4 @@
+// Alexandros Apostolidis
 public class Rekursion2 {
 
     /* *** Aufgabe 2a *** */

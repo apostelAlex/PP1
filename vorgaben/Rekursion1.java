@@ -1,3 +1,4 @@
+// Alexandros Apostolidis
 public class Rekursion1 {
     public static int fr(int a, int b){
 	if (a > b) {
