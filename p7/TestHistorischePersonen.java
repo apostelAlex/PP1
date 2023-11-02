@@ -1,3 +1,4 @@
+// Alexandros Apostolidis
 public class TestHistorischePersonen {
     public static void main(String[] args) {
         HistorischePerson[] persFeld = new HistorischePerson[persData.length];

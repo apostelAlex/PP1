@@ -1,3 +1,4 @@
+// Alexandros Apostolidis
 public class StringTest {
 
     /* *** Aufgabe 1a *** */    
